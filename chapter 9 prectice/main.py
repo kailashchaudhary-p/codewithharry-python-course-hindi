@@ -7,10 +7,11 @@ def game(com,you):
         print('Computer wins')
     else:
         print('You win')
-        return game(com_dec,you)
 print("Welcome to Snake, Water, Gun game!")
 print("Enter 's' for Snake, 'w' for Water and 'g' for Gun")
 com_dec=random.choice(['s','w','g'])
-you=input("your turn:")
-
-game_dec={'s':1,'w':2,'g':3}
+you=input("your turn:").lower()
+if you not in ['s', 'w', 'g']:
+    print("Invalid input! Please enter 's', 'w', or 'g'")
+else:
+    game(com_dec, you)
