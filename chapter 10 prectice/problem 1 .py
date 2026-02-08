@@ -1,2 +1,2 @@
-#Create a class “Programmer” for storing information of few programmers working at Microsoft
-class programmer:
+# Write a program to read the text from a given file ‘poems.txt’ and find out whether it contains the word ‘twinkle’B
+read
