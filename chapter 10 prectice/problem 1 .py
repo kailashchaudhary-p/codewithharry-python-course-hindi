@@ -7,3 +7,12 @@ if 'twinkle' in content:#use if else statement
 else:
     print('twinkle is not present in the file')
 f.close()#close the file object
+#now write in the txt file 
+s = "hello kaise ho mera nam kailash hai m btech student hu or m sardar beant singh state university gurdaspur m padta hu "
+f = open("chapter 10 prectice/hello.txt","w")
+f.write(s)
+f.close()
+#add second line in this file 
+f = open("chapter 10 prectice/hello.txt","a")
+f.write("\nthis is the seccond line ")
+f.close()
