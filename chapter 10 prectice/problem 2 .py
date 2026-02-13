@@ -1,11 +1,11 @@
 #The game() function in a program lets a user play a game and returns the score as an integer. You need to read a file ‘Hi-score.txt’ which is either blank or contains the previous Hi-score. You need to write a program to update the Hi-score whenever the game() function breaks the Hi-score.
-import random#use randome 
+import random#use random 
 def game():#create the function game
     print("Welcome to the game it create by kailash chaudhary")#print the walcome msg
     with open("chapter 10 prectice/highscore.txt") as f:#open the file
         hi_score = f.read()#read the file
     if hi_score == "":
-        hi_score = int(hi_score)
+        hi_score = 0
     else:
          hi_score = int(hi_score)
 
@@ -16,4 +16,4 @@ def game():#create the function game
         with open("chapter 10 prectice/highscore.txt", "w") as f:#open the file in write mode
             f.write(str(score))#write the new hi score in the file
     return score 
-game()
+game()#call the game function
