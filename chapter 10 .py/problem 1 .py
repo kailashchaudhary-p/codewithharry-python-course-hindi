@@ -4,7 +4,7 @@ class programer:
         self.name =input("Enter the nmae of programer:")
         self.age =int(input("Enter the age of programer:"))
         self.incriment=int(input("Enter the increment of programer:"))
-        print(self.name,self.age,self.incriment)
+        print(f"Your Good Name is {self.name} and Your age is {self.age} and Your Increment is {self.incriment}.")
         
 
 object=programer()
