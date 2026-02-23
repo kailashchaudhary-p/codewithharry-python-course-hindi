@@ -12,5 +12,14 @@ class animal:
                         print(f"name of pet is {self.name} and owner is {self.owner}")
                         class dog(pets):
                             def __init__(self,name,owner,power):
-                                super().
-            
+                                super().__init__(name,owner)
+                                self.power=power
+                                def bark(self):
+                                    print(f"{self.name} is barking with power {self.power}")
+                                    a=animal("lion")
+                                    p=pets("cat","wolf")
+                                    d=dog("dog","owner",100)
+                                    d.bark()
+                                    
+                                    
+
