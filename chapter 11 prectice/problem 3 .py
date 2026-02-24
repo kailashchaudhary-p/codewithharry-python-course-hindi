@@ -1,10 +1,15 @@
 #Create a class ‘Employee’ and add salary and increment properties to it.
+#Write a method ‘salaryAfterIncrement’ method with a @property decorator with a setter which changes the value of increment based on the salary.
 class Employee:
-    def __init__(self,name,salary,increment):
-        self.name=name
-        self.salary=salary
-        self.increment=increment
-    def show(self):
-        print(f"name of employee is {self.name} and salary is {self.salary} and increment is {self.increment}")
-E=Employee("Abhinav chaudhary",50000,5000)
-E.show()
+    def __init__(self):
+        self.salary=20
+        self.increment=40
+    @property
+    def salaryafterincrement(self):
+        return self.salary + self.increment *(self.increment/100)
+        @salaryafterincrement.setter
+        def salaryafterincrement(self,increment):
+            self.increment= self.salary * (increment/100)
+e=Employee()
+e.salaryafterincrement=30
+print(e.increment)
